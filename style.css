@@ -1,0 +1,28 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-image: url('https://t1.pixers.pics/img-c676e9e9/poster-campo-da-basket.jpg?H4sIAAAAAAAAA42PS26FMAxFtwNSwA4mPxbwpm8JCJLwSstPSdqirr6hrTqrVHlg-8o-VxdetzhMHqzfkg-wzs4tHqZ5yVvsgo_zhy-QkWrKLqtLgYhlt7_5YMN-FJVAVvGWmOTIBFdl9z7kz3UIL8VTSkfsACLVx3xmXG42gl0jNMgVoAZhtNGcJjSSxv5YqpiGzQ3BVa04CetjezC86v9cDRxBjI6PctQO21H3TYOnwOqX8IUlbVgr5YX-SakQmbrSpTCvRY675-tUPB-PEv7w_J4hf8HtDoSgBCgCai6pv90JlVBETS_tZEgrIf1k0U_KG-NbbC0K7Uanhjq7fAIqBYKjiwEAAA==');
+  background-size: cover;
+}
+.container{
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1170px;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+}
+h1{
+  top: 20px;
+  position: absolute;
+  color: white;
+}
+.player_data{
+  margin-top: 50px;
+  height:200px;
+}
