@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
     <title></title>
   </head>
   <body>
@@ -13,15 +14,19 @@
         <option value="">Scegli il giocatore</option>
       </select>
       <div class="player_data">
-        <h3>Codice giocatore: <span class="code"> </span></h3>
-        <h3>Punti fatti: <span class="points"> </span></h3>
-        <h3>Numero rimbalzi: <span class="rebounds"> </span></h3>
-        <h3>Numero falli: <span class="faults"> </span></h3>
-        <h3>Percentuale di successo per tiri da 2 punti: <span class="twopoints"> </span></h3>
-        <h3>Percentuale di successo per tiri da 3 punti: <span class="threepoints"> </span></h3>
-
       </div>
     </div>
     <script src="main.js"></script>
+    <script id="template_select" type="text/x-handlebars-template">
+      <option value="{{value}}">{{giocatore}}</option>
+    </script>
+    <script id="template_player_data" type="text/x-handlebars-template">
+      <h3>Codice giocatore: <span>{{codice}}</span></h3>
+      <h3>Punti fatti: <span>{{punti}}</span></h3>
+      <h3>Numero rimbalzi: <span>{{rimbalzi}}</span></h3>
+      <h3>Numero falli: <span>{{falli}}</span></h3>
+      <h3>Percentuale di successo per tiri da 2 punti: <span>{{duepunti}}</span></h3>
+      <h3>Percentuale di successo per tiri da 3 punti: <span>{{trepunti}}</span></h3>
+    </script>
   </body>
 </html>

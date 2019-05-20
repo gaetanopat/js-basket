@@ -24,5 +24,9 @@ h1{
 }
 .player_data{
   margin-top: 50px;
-  height:200px;
+  height: 150px;
+}
+select{
+  width: 200px;
+  height: 30px;
 }
